@@ -1,0 +1,14 @@
+﻿.tBody {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+
+.bg-IPN {
+    background-color: #652342 !important;
+}
+
+.Vcontainer {
+    display: flex;
+    align-items: stretch;
+}
