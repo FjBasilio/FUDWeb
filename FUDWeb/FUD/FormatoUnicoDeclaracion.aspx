@@ -6,6 +6,9 @@
     <div style="margin-top: 4rem; margin-bottom: 4rem;">
         <%--<h4>Formato Único de Declaración</h4>--%>
     </div>
+    <div class="row" style="margin: 3rem;">
+        <asp:LinkButton ID="LkbCancelar" CssClass="pull-right" runat="server" Text="-> Cancelar <-" OnClick="LkbCancelar_Click" ></asp:LinkButton>
+    </div>
     <div class="row" style="border-color: black; border-style: solid; margin: 3rem; padding: 3rem;">
         <div class="col-md-12">
 
@@ -576,7 +579,7 @@
                         </p>
                     </div>
                     <div id="Vright" runat="server" class="col-md-9">
-                        <asp:TextBox ID="TxtVExtraInfo" runat="server" TextMode="MultiLine" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="TxtVExtraInfo" placeholder="Otros datos de ubicación." runat="server" TextMode="MultiLine" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="row" style="background-color: lightgray;">
@@ -816,7 +819,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <asp:Label ID="VIILblPresento" runat="server" Text="¿Presentó queja, petición u otro tipo de solicitud ante organismo de DD. HH.?: "></asp:Label>
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                        <asp:RadioButtonList ID="VIIRblPresento" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
                             <asp:ListItem Value="1" style="margin-right: 3rem;" Text="Sí"></asp:ListItem>
                             <asp:ListItem Value="2" style="margin-right: 3rem;" Text="No"></asp:ListItem>
                         </asp:RadioButtonList>
@@ -916,8 +919,10 @@
             <!-- VII. AUTORIDADES QUE HAN CONOCIDO DE LOS HECHOS -->
 
         </div>
+        <div class="row">
+            <asp:LinkButton ID="LkbTerminar" runat="server" OnClick="LkbTerminar_Click" Text="Terminar" style="padding:2rem;" CssClass="btn btn-success pull-right"></asp:LinkButton>
+        </div>
     </div>
-
     <script>
         const styleElementHeight = getComputedStyle(document.getElementById("TxtVExtraInfo")).height;
         console.log('style Element Height : ', styleElementHeight);

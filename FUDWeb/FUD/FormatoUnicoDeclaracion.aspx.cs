@@ -152,5 +152,15 @@ namespace FUDWeb.FUD
 
 
         }
+
+        protected void LkbCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/FUD/Inicio.aspx");
+        }
+
+        protected void LkbTerminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

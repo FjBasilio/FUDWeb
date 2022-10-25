@@ -15,6 +15,15 @@ namespace FUDWeb.FUD
     {
 
         /// <summary>
+        /// Control LkbCancelar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LkbCancelar;
+
+        /// <summary>
         /// Control PnlHeader.
         /// </summary>
         /// <remarks>
@@ -1347,13 +1356,13 @@ namespace FUDWeb.FUD
         protected global::System.Web.UI.WebControls.Label VIILblPresento;
 
         /// <summary>
-        /// Control RadioButtonList1.
+        /// Control VIIRblPresento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        protected global::System.Web.UI.WebControls.RadioButtonList VIIRblPresento;
 
         /// <summary>
         /// Control VIILblFechaPresento.
@@ -1516,5 +1525,14 @@ namespace FUDWeb.FUD
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox VIITxtOtraAutoridad;
+
+        /// <summary>
+        /// Control LkbTerminar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LkbTerminar;
     }
 }
